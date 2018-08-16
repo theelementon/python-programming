@@ -29,7 +29,7 @@ class calculator:
 c = calculator(9,8)
 c.addition() '''
 
-class power:
+'''class power:
     def spliting(self,sent):
         sentence = sent.split(" ")
         return sentence
@@ -38,5 +38,19 @@ class power:
 
 s = power()
 
-s.printing(s.spliting("This is a sentence"))
+s.printing(s.spliting("This is a sentence"))'''
 
+
+class temp:
+    def convert(self,temper):
+        faren = temper*1.8 + 32
+        return faren
+    def printing(self,faren):
+        print "{} degree celcius is equal to {} defree farenheit".format(celci,faren)
+    def input(self):
+        temper = input("Enter your tempertature in degree c")
+        return temper
+
+t = temp()
+celci = t.input()
+t.printing(t.convert(celci))
